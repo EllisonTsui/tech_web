@@ -6,14 +6,35 @@
     <script>
         function getDate(){
             document.getElementById('date').innerHTML = Date();
+            document.getElementById('date1').innerText = 'Ellison'.charAt(5); //charAt(index)显示 该字符 指定索引为index的字符
+            document.getElementById('date2').innerText = 'Ellison'.toLowerCase(); // 显示 该字符 小写
+            document.getElementById('date3').innerText = 'Ellison'.toUpperCase(); // 显示 该字符 大写
+            document.getElementById('date4').innerText = 'Ellisons'.indexOf('s',6); // 显示 该字符从 6索引开始 出现 s 的首次索引位置
         }
+        function rec(){
+            var score;
+            score = prompt("请输入你的成绩","90");
+            if(score>=90){
+                document.write("你很棒!");
+            }else if(score>=75){
+                document.write("不错哦!");
+            }else if(score>=60){
+                document.write("要加油!");
+            }else{
+                document.write("要努力了!");
+            }
+        } 
     </script>
 </head>
 <body>
     <div>
         <h1>JS 初体验</h1>
         <p id = "date" >时间即将在此点击按钮呈现</p>
-        <button onclick="getDate()">点击</button>
+        <p id = "date1" >显示字符</p>
+        <p id = "date2" >显示字符小写</p>
+        <p id = "date3" >显示字符大写</p>
+        <p id = "date4" >显示字符开始的首次索引位置</p>
+        <button onclick="rec()">点击</button>
     </div>
 </body>
 </html>

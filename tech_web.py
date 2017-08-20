@@ -13,6 +13,11 @@ def js_test01():
     # 首次在前端添加javascript的效果提示
     return render_template('test01.html')
 
+@app.route('/test02')
+def js_test02():
+    # js中document输出流
+    return render_template('test02.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)

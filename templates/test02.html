@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+
+<body>
+    <script>
+
+        //内容1：直接在html输出流
+        document.write("<h1>hello world1</h1>");
+        document.write("<h2>hello world2</h2>");
+
+        function write1(){
+            //内容2：只能在 HTML 输出流中使用 <strong>document.write</strong>。
+            //      如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+            document.write("<h1>hello world5</h1>");
+        }
+        // 内容4
+        function fun3(){
+            var x = document.getElementById("content"); //定位到元素
+            x.innerHTML = "welcome";   //修改内容
+            x.style.color = "#e56789"; //修改颜色
+        }
+
+    </script>
+    hello world3
+    <button onclick="write1()">点击</button>
+    <!--内容3 测试js的事件（函数）反应，执行内置的alert()函数-->
+    <button onclick="alert('欢迎您')">点击2</button>
+
+    <button type="button" onclick="fun3()">点击3</button>
+    <p id = "content">点击3，显示信息</p>
+</body>
+</html>
