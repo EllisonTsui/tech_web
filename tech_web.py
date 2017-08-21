@@ -13,10 +13,10 @@ def js_test01():
     # 首次在前端添加javascript的效果提示
     return render_template('test01.html')
 
-@app.route('/test02')
-def js_test02():
+@app.route('/test03')
+def js_test03():
     # js中document输出流
-    return render_template('test02.html')
+    return render_template('test03.html')
 
 if __name__ == '__main__':
     app.debug = True
