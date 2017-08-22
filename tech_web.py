@@ -18,6 +18,11 @@ def js_test03():
     # js中document输出流
     return render_template('test03.html')
 
+@app.route('/test04')
+def js_test04():
+    # js中的输出
+    return render_template('test04.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)
