@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*对象定义*/
+    var obj = {
+        name:"xiaoming",
+        age :25,  //注意之间使用逗号隔开
+        love:function(){
+            return "football";
+        }
+    }
+
+    document.write(obj.name); //属性调用方法1，xiaoming
+    document.write(obj["name"]); //属性调用方法2，xiaoming
+    document.write(obj.age); //25
+    document.write(obj.love()); //football
+    document.write(obj.love);//function (){ return "football"; }
+</script>
+</body>
+</html>

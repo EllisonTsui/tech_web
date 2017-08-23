@@ -45,8 +45,14 @@ def js_test08():
 
 @app.route('/test09')
 def js_test09():
-    # js中的变量
+    # js中的数据类型
     return render_template('test09.html')
+
+
+@app.route('/test10')
+def js_test10():
+    # js中的对象
+    return render_template('test10.html')
 
 if __name__ == '__main__':
     app.debug = True
