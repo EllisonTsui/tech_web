@@ -30,8 +30,18 @@ def js_test05():
 
 @app.route('/test06')
 def js_test06():
-    # js中的语法
+    # js中的语句
     return render_template('test06.html')
+
+@app.route('/test07')
+def js_test07():
+    # js中的注释
+    return render_template('test07.html')
+
+@app.route('/test08')
+def js_test08():
+    # js中的变量
+    return render_template('test08.html')
 
 if __name__ == '__main__':
     app.debug = True
