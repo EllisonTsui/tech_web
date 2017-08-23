@@ -28,6 +28,11 @@ def js_test05():
     # js中的语法
     return render_template('test05.html')
 
+@app.route('/test06')
+def js_test06():
+    # js中的语法
+    return render_template('test06.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)
