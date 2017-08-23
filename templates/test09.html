@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<p id = 'u'>一段文字</p>
+
+<script>
+    /*字符串*/
+    var content = "我喜欢看一本\"书\"";
+    document.write(content);
+    document.write("<br/>");
+
+    /*数字*/
+    var data = 12;
+    var data = 3.14;
+    var data = 3e5;//科学(指数)计数法
+    var data = 3e-5;
+    document.write(data);
+    document.write('<br/>');
+
+    /*布尔*/
+    document.write(1 == 1);
+    document.write(1 != 1);
+    document.write('<br/>');
+
+    /*数组*/
+    //    var arr1 = new Array();
+    //    arr1[0] = 'name1'
+    //    arr1[1] = 22
+    //    arr1[2] = true
+
+    //    var arr1 = new Array('name2',23,false);
+    var arr1 = ['name3',24,true];
+    for(var i = 0; i<arr1.length;i++){
+        document.write(arr1[i] + '<br/>');
+    }
+    document.write('<br/>');
+
+    /*对象*/
+    var people = {'name':'xiaoming','age':25};
+    document.write(people.name);
+    document.write(people['age']);
+    document.write('<br/>');
+
+    /*undefined 表示未初始化
+     * null 表示一个不存在的对象*/
+    var a;
+    document.write(undefined == a);
+    document.write(null == document.getElementById('u'));
+    document.write(null == document.getElementById('u1'));
+    document.write('<br/>');
+
+    var people = {'name':'xiaoming','age':25};
+    var people1 = {'name':'xiaoming','age':25};
+    document.write(people == people1); //值相等
+    document.write(people === people1);
+
+    //获得对象的类型的方法
+    document.write(typeof people);
+    document.write(typeof undefined);
+    document.write(typeof arr1);
+    document.write(typeof null);
+    document.write(typeof 1.2);
+    document.write(typeof 'haha');
+
+</script>
+
+</body>
+</html>

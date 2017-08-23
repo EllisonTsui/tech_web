@@ -43,6 +43,11 @@ def js_test08():
     # js中的变量
     return render_template('test08.html')
 
+@app.route('/test09')
+def js_test09():
+    # js中的变量
+    return render_template('test09.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)

@@ -45,7 +45,17 @@
 > * JS的变量通过var来声明，形如 var 变量名，默认没有赋值的变量是undefined;
 > * 可以同时声明多个变量 var 变量名1 = 1，变量名2 = '小明'
 > * 需要说明的是，重新声明一个变量的时，变量值不变，比如：var name = 'xiaoming';var name   其值还是'xiaoming',除非重新定义。
-
+   8. [JavaScript的数据类型](http://127.0.0.1:8082/test09)
+> * JS的数据类型：数字(Number),数组(Array),布尔(Boolean),字符串(String),对象(Object),空(Null),未定义(Nndefined) ;
+> * JS的类型是动态类型，即相同变量可用作不同的类型 ;
+> * 数据类型——字符串:使用单引号或者是双引号均可，在一个字符串中有引号存在，可以用反斜杠进行转义 ;
+> * 数据类型——布尔：true 和 false ,注意是小写;
+> * 数据类型——数组：3种方式 new Array(), ['str1','str2'],new Array('str1','st2');
+> * 数据类型——对象：有点类似字典,形如:var people = {'name':'xiaoming','age':25},寻址方式：people['name']或者people.name
+> * 数据类型——Undefined:变量未初始化，就会赋予Undefined值
+> * 数据类型——Null:用来表示尚未存在的对象，一般是对于获得的对象不存在的时候，返回的值
+> * 声明变量时候，都要用关键字 new 进行声明;
+> * 数据类型通过typeof来判断  写法:typeof 对象
 
 
 
