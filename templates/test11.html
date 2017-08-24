@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+
+<button onclick="func1('a','123')">点击</button>
+
+<p id = 'content'></p>
+</body>
+</html>
+
+<script>
+    <!--内容1:多参数函数-->
+    function func1(var1,var2){
+        alert(var1 + var2);
+    }
+
+    <!--内容2:return 返回-->
+    function func2(var1,var2){
+        return var1 + var2;
+    }
+
+    document.getElementById("content").innerHTML = func2(1,2);
+    var a = 'hello1';//全局变量
+    <!--内容3:局部变量-->
+    function func2(var1,var2){
+//        var a = 'hello'; //函数内部声明过的 变量，有效范围只在函数内部
+        a = 'hello'; //主要：不管是不是函数内部未声明过的变量，都是按照全局变量处理
+        alert(a);
+    }
+    document.getElementById("content").innerHTML = a;
+
+</script>
+
