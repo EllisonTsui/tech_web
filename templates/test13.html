@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*内容1 比较 == 和 === 的区别*/
+        var a = '123abc';
+        var b = '123abc';
+        alert(a == b);
+        alert(a === b);
+        var a1 = {'name':'john'};
+        var b1 = {'name':'john'};
+        alert(a1 == b1);
+        alert(a1 === b1);
+        /*内容二：转义字符*/
+        document.write("hello 'book'");
+        document.write('hello "book"');
+        document.write('hello \'book\'');
+        /*内容三：字符串属性，长度*/
+        document.write('hello'.length);
+        /*内容四：字符串创建，不建议new,会延缓速度*/
+        var content = new Array('hello');
+        document.write(content);
+        document.write(typeof content);
+        var content = 'hello';
+        document.write(content);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

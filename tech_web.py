@@ -58,6 +58,18 @@ def js_test11():
     # js中的函数
     return render_template('test11.html')
 
+@app.route('/test12')
+def js_test12():
+    # js中的事件
+    return render_template('test12.html')
+
+@app.route('/test13')
+def js_test13():
+    # js中的字符串
+    return render_template('test13.html')
+
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)
+
