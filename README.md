@@ -89,6 +89,11 @@
 > * JS比较运算符（== === != !== > < >= <=）,其中!== 值和类型有一个不相等，或两个都不相等,需要注意的是 5 == ‘5’的值是true；
 > * JS逻辑运算符（&& || ！）
 > * JS条件运算符： 变量 = (条件)？value1:value2,如果条件满足结果为value1,不满足条件结果value2
+   15. [JavaScript的条件语句](http://127.0.0.1:8082/test15)
+> * 顾名思义就是根据不同的条件执行相应的代码块；
+> * if /if...else /if...else if....else /switch
+> * switch(n){case 1:代码块1; break; case 2:代码块2;break;default:与 case1和case2不同时执行的代码块;} 需要注意的是此处的break是用于防止执行的代码继续执行,跳出该case,当然也视情况而定;
+
 
 
 

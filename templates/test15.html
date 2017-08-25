@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*内容1:if else */
+        function choice(){
+            var var1 = document.getElementById('input').value;
+
+            if (var1 <10){
+                alert('小于10');
+            }else if(var1 <20){
+                alert('10-20');
+            }else{
+                alert('大于20');
+            }
+        }
+        /*内容2：switch*/
+        function get_day(){
+            var x = '';
+            var day = new Date().getDay();
+            switch(day){
+                case 0:x = '周日';break;
+                case 1:x = '周一';break;
+                case 2:x = '周二';break;
+                case 3:x = '周3';break;
+                case 4:x = '周4';break;
+                case 5:x = '周5';break;
+                case 6:x = '周6';break;
+                default:x = '有误';
+            }
+            alert(x);
+
+        }
+    </script>
+        <input type= 'text' id = 'input' value = '100'/>
+        <input type= 'button' id = 'but' value = '按钮' onclick="choice();"/>
+        <input type= 'button' id = 'day' value = '今天是周几' onclick="get_day();"/>
+
+
+</body>
+</html>

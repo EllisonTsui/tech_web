@@ -73,6 +73,10 @@ def js_test14():
     # js中的运算符
     return render_template('test14.html')
 
+@app.route('/test15')
+def js_test15():
+    # js中的条件语句
+    return render_template('test15.html')
 
 if __name__ == '__main__':
     app.debug = True
