@@ -68,6 +68,11 @@ def js_test13():
     # js中的字符串
     return render_template('test13.html')
 
+@app.route('/test14')
+def js_test14():
+    # js中的运算符
+    return render_template('test14.html')
+
 
 if __name__ == '__main__':
     app.debug = True
