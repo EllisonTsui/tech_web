@@ -78,6 +78,11 @@ def js_test15():
     # js中的条件语句
     return render_template('test15.html')
 
+@app.route('/test16')
+def js_test16():
+    # js中的循环
+    return render_template('test16.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)
