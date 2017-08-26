@@ -98,6 +98,11 @@ def js_test19():
     # js中的类型转换
     return render_template('test19.html')
 
+@app.route('/test20')
+def js_test20():
+    # js中的类型转换
+    return render_template('test20.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*内容1：search()*/
+    var a = 'hello world';
+    alert(a.search('world'));
+    /*内容2：replace()*/
+    var a = 'hello world';
+    alert(a.replace('world','baby'));
+    /*内容3：RegExp对象的test()方法*/
+    var patt = /el/;
+    alert(patt.test("hello"));
+    /*内容4：RegExp对象的exec()方法*/
+    var patt = /el/;
+    alert(patt.exec("hello hello"));
+    alert(patt.exec("hello hello").constructor);
+</script>
+</body>
+</html>
