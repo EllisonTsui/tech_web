@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*内容1：break continue*/
+    for(var i= 0;i<10;i++){
+        /*内容1:*/
+        if(i == 3){
+//          break; // 跳出循环
+            continue;// 跳出当前迭代，继续下一个迭代
+        }
+        document.write(i + '<br/>');
+    }
+    document.write('---------------------------' + '<br/>');
+    for(var i =0 ;i<3;i++){
+        for(var j =10 ;j<13;j++){
+            if (j ==11){
+//                break; //验证就近原则，只是跳出当前循环块
+                continue; //验证就近原则，仅仅只是跳出当前一个迭代
+            }
+            document.write(i+':'+j+'<br/>');
+        }
+        document.write('+++++++++++++' + '<br/>');
+    }
+
+    /*内容2：验证js标签*/
+    cars=["BMW","Volvo","Saab","Ford"];
+    list:
+    {
+        document.write(cars[0] + "<br>");
+        document.write(cars[1] + "<br>");
+        document.write(cars[2] + "<br>");
+        break list;
+        document.write(cars[3] + "<br>");
+        document.write(cars[4] + "<br>");
+        document.write(cars[5] + "<br>");
+    }
+
+
+</script>
+</body>
+</html>

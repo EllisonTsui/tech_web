@@ -101,7 +101,9 @@
 > * while(条件){执行代码;}只要条件允许，就执行代码；
 > * do{}while();该语句会在执行条件语句之前执行一点代码块；
    17. [JavaScript的break、continue](http://127.0.0.1:8082/test17)
-> * break用于跳出当前循环，continue跳出当前迭代
+> * break用于跳出当前循环，continue跳出当前迭代;break只能在循环和switch;continue只能在循环中;
+> * JS标签：语法： label:statements，需要在代码块前加冒号，而break和continue仅仅只是可以跳出语句break label；通过标签引用，break 语句可用于跳出任何 JavaScript 代码块：
+
 
 
 

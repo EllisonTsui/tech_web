@@ -83,6 +83,11 @@ def js_test16():
     # js中的循环
     return render_template('test16.html')
 
+@app.route('/test17')
+def js_test17():
+    # js中的break continue
+    return render_template('test17.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)
