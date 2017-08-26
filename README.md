@@ -103,6 +103,10 @@
    17. [JavaScript的break、continue](http://127.0.0.1:8082/test17)
 > * break用于跳出当前循环，continue跳出当前迭代;break只能在循环和switch;continue只能在循环中;
 > * JS标签：语法： label:statements，需要在代码块前加冒号，而break和continue仅仅只是可以跳出语句break label；通过标签引用，break 语句可用于跳出任何 JavaScript 代码块：
+   18. [JavaScript的typeof](http://127.0.0.1:8082/test18)
+> * typeof 用于判断值(或对象)的数据类型;
+> * null 表示一个空对象应用，undefined代表一个没有设置值的变量，type null 结果是object 而typeof undefined结果是undefined;
+> * null == undefined结果是true;null === undefined结果是false;
 
 
 

@@ -88,6 +88,11 @@ def js_test17():
     # js中的break continue
     return render_template('test17.html')
 
+@app.route('/test18')
+def js_test18():
+    # js中的typeof
+    return render_template('test18.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)
