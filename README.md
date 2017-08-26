@@ -107,6 +107,14 @@
 > * typeof 用于判断值(或对象)的数据类型;
 > * null 表示一个空对象应用，undefined代表一个没有设置值的变量，type null 结果是object 而typeof undefined结果是undefined;
 > * null == undefined结果是true;null === undefined结果是false;
+   19. [JavaScript的类型转换](http://127.0.0.1:8082/test19)
+> * 常用的Number(),String(),Boolean();
+> * JS中有5中数据类型：string,number,boolean,object,function;3种对象类型：object array Date;2种不包含任何值的数据类型null undefined
+> * constructor属性返回变量的构造函数 ,indexOf() 返回的是字符串中首次包含该字符参数的位置
+> * JS类型转换：1.变量自身转换；2.通过函数转换；
+> * [类型转换相关参考](http://www.runoob.com/js/js-type-conversion.html)
+> * JS的一元运算符 +  用于将变量变成数字  var y = '123' ;+ y 结果就是 123；
+> * 将布尔值转换为数字  Number(false)  结果是0； Number(true)  结果是1；
 
 
 

@@ -93,6 +93,11 @@ def js_test18():
     # js中的typeof
     return render_template('test18.html')
 
+@app.route('/test19')
+def js_test19():
+    # js中的类型转换
+    return render_template('test19.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+/*    /!*内容1：变量的类型*!/
+    typeof "John"                 // 返回 string
+    typeof 3.14                   // 返回 number
+    typeof NaN                    // 返回 number，NaN非数字的值
+    typeof false                  // 返回 boolean
+    typeof [1,2,3,4]              // 返回 object
+    typeof {name:'John', age:34}  // 返回 object
+    typeof new Date()             // 返回 object
+    typeof function () {}         // 返回 function
+    typeof myCar                  // 返回 undefined (如果 myCar 没有声明)
+    typeof null                   // 返回 object
+
+
+    /!*内容2：变量的构造函数*!/
+    "John".constructor                 // 返回函数 String()  { [native code] }
+    (3.14).constructor                 // 返回函数 Number()  { [native code] }
+    false.constructor                  // 返回函数 Boolean() { [native code] }
+            [1,2,3,4].constructor              // 返回函数 Array()   { [native code] }
+    {name:'John', age:34}.constructor  // 返回函数 Object()  { [native code] }
+    new Date().constructor             // 返回函数 Date()    { [native code] }
+    function () {}.constructor         // 返回函数 Function(){ [native code] }*/
+
+    /*indexOf()使用*/
+    var myArray = [1,2,3];
+    document.write(myArray.constructor.toString().indexOf("Array") > -1);
+    document.write('<br/>');
+    /*内容3：变量转换*/
+    document.write( typeof  String(123) + "<br>" +
+            String(100 + 23)+ "<br>" +
+            typeof (123).toString()+ "<br>");
+
+
+    document.write(typeof parseFloat('12.456'));
+</script>
+
+</body>
+</body>
+</html>
