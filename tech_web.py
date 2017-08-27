@@ -103,6 +103,11 @@ def js_test20():
     # js中的类型转换
     return render_template('test20.html')
 
+@app.route('/test21')
+def js_test21():
+    # js中的异常处理
+    return render_template('test21.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)

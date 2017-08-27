@@ -117,9 +117,11 @@
 > * 将布尔值转换为数字  Number(false)  结果是0； Number(true)  结果是1；
    20. [JavaScript的正则表达式](http://127.0.0.1:8082/test20)
 > * 常用的search()用于检索子字符串，返回位置,replace()用一些字符替换另外一些字符;
-> * var patt=new RegExp(pattern,modifiers); 或者更简单的方式:var patt=/pattern/modifiers;  RegExp 对象是一个预定义了属性和方法的正则表达式对象;其test()用于检测字符串中是否存在匹配模式，返回true/false;exec()用于检索字符串中的正则的模式，返回一个数组，其中存放匹配的结果，没有及时null。
-
-
+> * var patt=new RegExp(pattern,modifiers); 或者更简单的方式:var patt=/pattern/modifiers;  RegExp 对象是一个预定义了属性和方法的正则表达式对象;其test()用于检测字符串中是否存在匹配模式，返回true/false;exec()用于检索字符串中的正则的模式，返回一个数组，其中存放匹配的结果，没有返回null。
+   21. [JavaScript的异常处理](http://127.0.0.1:8082/test21)
+> * try 用于检测代码内容 catch 处理错误 throw 创建自定义错误；
+> * try {执行代码} catch(err){//异常处理}
+> * throw用于自定义错误。
 
 
 

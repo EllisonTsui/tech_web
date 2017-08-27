@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write('hello'+'<br/>');
+    /*内容1：try catch使用*/
+//    try{
+//       XXX('hello');
+//
+//    }catch(err){
+//        alert(err.message);
+//    }
+    document.write('hello1'+'<br/>');
+    /*内容2：throw使用*/
+    try{
+
+        if(2<3) throw '比较错误2'; //执行到该throw 会跳到catch中
+        if(2<3) throw '比较错误3';
+
+    }catch(err){
+        console.log('-------');
+        alert("错误: " +err);
+    }
+
+</script>
+</body>
+</html>
