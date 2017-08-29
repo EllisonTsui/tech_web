@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*严格模式*/
+//    "use strict";
+    x = 3.14;       // 报错 (Uncaught ReferenceError: x is not defined )
+    "use strict";
+    console.log(this);
+    console.log(!this);  // 非函数内部使用this,不管是否在严格模式下，this都是指代全局变量，所有！this都是空
+
+
+    function f(){
+//        "use strict";
+        console.log(!this);// 但是在严格模式下，this是undefined，所以是!this是true，而在非严格模式下，是fale
+    }
+</script>
+<button onclick="f();">点击</button>
+</body>
+</html>
