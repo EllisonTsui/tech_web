@@ -16,6 +16,9 @@
 
     function f(){
 //        "use strict";
+        a = {1:2,5:8}
+        console.log(a[1]);
+        console.log(a[2]);
         console.log(!this);// 但是在严格模式下，this是undefined，所以是!this是true，而在非严格模式下，是fale
     }
 </script>

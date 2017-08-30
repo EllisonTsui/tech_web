@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write(Boolean(x =10)); //T
+    document.write(Boolean(x =0));//F
+    document.write(Boolean(x =-10));//T
+    document.write(Boolean(10 == '10'));//T
+    document.write(10 + '10');//'1010'
+
+    var x = 0.1;
+    var y = 0.2;
+    var z = x + y;
+    document.write(z);//0.30000000000000004
+
+    var str = 'hello \
+    world';
+
+    // 测试对象是否存在,不能使用if (myObj !== null && typeof myObj !== "undefined")
+
+    if(typeof str !=undefined && str != null){
+
+    }
+
+    for (var i = 0; i < 10; i++) {
+        // some code
+    }
+    document.write(i);
+</script>
+</body>
+</html>
