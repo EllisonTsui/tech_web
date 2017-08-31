@@ -123,6 +123,11 @@ def js_test24():
     # js中的常见误区
     return render_template('test24.html')
 
+@app.route('/test25')
+def js_test25():
+    # js中的表单验证
+    return render_template('test25.html')
+
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)
