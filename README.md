@@ -5,6 +5,7 @@
 >* html输出流写法document.write()及其页面加载后的区别;
 >* js执行动作效果;
 >* js获得元素document.getElementByXX以及修改元素信息
+>* ECMAScript是JS的标准，后者是前者的实现；
    3. [JavaScript的使用](http://127.0.0.1:8082/test03)
 >* js代码涉及script标签的位置；
 >* 引用外部js库的方式
@@ -143,8 +144,13 @@
 > * isNaN() 判断是不是数字，是数字为，不是则为false;
 > * 表单自动验证(IE9之后的版本)在数据框中添加 required= "required";
 > * H5新增了约束验证;
-
-
+   26.[javascript的json](http://127.0.0.1:8082/test26)
+> * json 全称  JavaScript Object Notation,当然也可以用于其他语言中，应用于数据交互和存储等功能上;
+> * json 对应于javascript中的对象、数组，逗号分隔，大括号表示对象，方括号表示数组；
+> * js中内置函数JSON.parse()用于将字符串转换成json对象；而JSON.stringify()用于将json对象转换成字符串。
+   27.[javascript的void](http://127.0.0.1:8082/test27)
+> * void是执行内部的表达式，但是没有返回值的关键字；
+> * href="#"与href="javascript:void(0)"的区别:1.# 包含了一个位置信息，默认的锚是#top 也就是网页的上端。而javascript:void(0), 仅仅表示一个无效链接。在页面很长的时候会使用 # 来定位页面的具体位置，格式为：# + id。
 
 
 

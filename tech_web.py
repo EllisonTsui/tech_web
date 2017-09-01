@@ -134,7 +134,15 @@ def js_test25_form():
         print('---------')
         print(request.form['myInput'])
 
+@app.route('/test26')
+def js_test26():
+    # js中的json
+    return render_template('test26.html')
 
+@app.route('/test27')
+def js_test27():
+    # js中的void()
+    return render_template('test27.html')
 if __name__ == '__main__':
     app.debug = True
     app.run('0.0.0.0', port=8082)

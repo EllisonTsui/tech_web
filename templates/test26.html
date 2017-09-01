@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    console.log('-----');
+    console.log(typeof a);
+    var a;
+    console.log(typeof a);
+
+    var jsonStr = {"titles":[{"title":"name1"},{"title":"name2"}]};
+    console.log(typeof jsonStr);
+    var jsonStr = '{"titles":[{"title":"name1"},{"title":"name2"}]}';
+    console.log(typeof jsonStr);
+
+    var jsonStr = JSON.stringify({"titles":[{"title":"name1"},{"title":"name2"}]});
+    console.log(typeof jsonStr);
+    var jsonStr = JSON.parse('{"titles":[{"title":"name1"},{"title":"name2"}]}');
+    console.log(typeof jsonStr);
+    console.log('-----1');
+
+</script>
+</body>
+</html>
