@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-from flask import Flask, render_template, url_for, redirect
+from flask import Flask, render_template, url_for, redirect,request
 
 app = Flask(__name__)
 
@@ -127,6 +127,13 @@ def js_test24():
 def js_test25():
     # js中的表单验证
     return render_template('test25.html')
+@app.route('/test25_form',methods=["POST"])
+def js_test25_form():
+    # js中的表单验证2
+    if request.method == 'POST':
+        print('---------')
+        print(request.form['myInput'])
+
 
 if __name__ == '__main__':
     app.debug = True
