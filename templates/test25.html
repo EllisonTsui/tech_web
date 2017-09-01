@@ -5,18 +5,38 @@
     <title>Title</title>
 </head>
 <body>
-<form name="myForm" action="test25_form" onsubmit="return validata();" method="post">
-    输入一个数字：<input type="text" name = "myInput">
-    <input type="submit" value="提交">
+<!--<form name="myForm" action="test25_form" onsubmit="return validata();" method="post">-->
+    <!--输入一个数字：<input type="text" name = "myInput">-->
+    <!--<input type="submit" value="提交">-->
 
-</form>
+<!--</form>-->
+    <input id ='id1' type="number" name = "myInput" min="10" max = "100" >
+    <button onclick="validata();">验证</button>
+
 <script>
+
     function validata(){
-        var x = document.forms["myForm"]["myInput"].value;
-        if(x == null || x == ''){
-            return false
+        /*内容1：表单验证*/
+//        var x = document.forms["myForm"]["myInput"].value;
+//        if(x == null || x == ''){
+//            return false
+//        }
+//        return true;
+
+        /*内容2:严格验证*/
+        var input = document.getElementById("id1");
+
+//        if(input.checkValidity() == true){
+//            alert(input.validationMessage);
+//        }else
+        if(input.validity.rangeOverflow){
+            input.setCustomValidity('太大');
+        }else if(input.validity.rangeUnderflow){
+            input.setCustomValidity('太小');
         }
-        return true;
+        alert(input.validationMessage);
+
+
     }
 
 
