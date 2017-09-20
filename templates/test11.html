@@ -11,6 +11,8 @@
 <button onclick="func1('a','123')">点击</button>
 
 <p id = 'content'></p>
+<p id = 'content1'></p>
+<p id = 'content2'></p>
 </body>
 </html>
 
@@ -56,5 +58,47 @@
         return sum;
     }
     document.getElementById("content").innerText = sumAll(1,2,3,4,5);
+
+    <!--内容8.1:函数调用方法1-->
+    // 此方法有无window都无所谓
+    function myFunction1(a, b) {
+        return a * b;
+    }
+    document.getElementById("content1").innerText = window.myFunction1(10, 2);
+    document.getElementById("content2").innerText = myFunction1(10, 2);
+
+    <!--内容8.2:函数调用方法2-->
+    var obj1 = {
+        name:'john',
+        action:function(){
+            return this.name;
+        }
+    }
+    document.getElementById("content2").innerText = obj1.action();
+
+
+    <!--内容8.3:函数调用方法3-->
+    //构造函数
+    function Func1(param1,param2){
+        this.name = param1,
+        this.age = param2
+    }
+    var x = new Func1('john1',20);
+    document.getElementById("content2").innerText = x.name;
+
+    <!--内容8.4:函数调用方法4-->
+    function func2(x,y){
+       return x *y;
+    }
+
+    var myObj = func2.call(myObj,2,3);
+    document.getElementById("content1").innerText = myObj;
+    var myObj1 = func2.apply(myObj1,[2,4]);
+    document.getElementById("content2").innerText = myObj1;
+
+    <!-- js闭包-->
+    
+
+
 </script>
 
