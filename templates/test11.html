@@ -35,5 +35,26 @@
     }
     document.getElementById("content").innerHTML = a;
 
+    <!--内容4：函数表达式(匿名函数) -->
+    var x = function(a,b){return a+b;}
+    document.getElementById("content").innerText = x(4,3);
+
+    <!--内容5：函数构造函数-->
+    var x = new Function("a","b","return a*b");
+    document.getElementById("content").innerText = x(4,3);
+
+    <!--内容6：函数的自我调用-->
+    (function(){document.getElementById("content").innerHTML = "自己调用函数";})();
+
+    <!--内容7：内置的Arguments对象-->
+    function sumAll(){
+        var i,sum = 0;
+        for(i = 0;i < arguments.length;i++){
+            sum += arguments[i];
+            console.log(sum);
+        }
+        return sum;
+    }
+    document.getElementById("content").innerText = sumAll(1,2,3,4,5);
 </script>
 
